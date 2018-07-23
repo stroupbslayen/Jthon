@@ -9,7 +9,7 @@ class Pyson:
 
     Default datatype is a DICT, but you can pass what you want to it. EX: example=Pyson(file_name,[]) would pass a list to the json.
 
-    To update the data, modify the json with using the "data" attribute. EX: example.data.append('test') would add 'test' to the list declared above.
+    To update the data, modify the json using the "data" attribute. EX: example.data.append('test') would add 'test' to the list declared above.
     
     Commit changes with the "save" attribute. EX: example.save would save the changes to the json file'''
 
