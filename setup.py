@@ -16,7 +16,7 @@ setup(
     long_description_content_type='text/markdown',
     python_requires='>=3.6.0',
     classifiers=[
-        'License :: MIT License',
+        'License :: OSI Approved :: MIT License',
         'Intended Audience :: Developers',
         'Natural Language :: English',
         'Operating System :: OS Independent',
