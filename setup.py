@@ -4,11 +4,11 @@ with open('README.md', 'r') as f:
     long_description = f.read()
 
 setup(
-    name='pysonify',
+    name='jthon',
     version='0.5.0',
     description='A JSON helper for Python',
-    py_modules=['pysonify'],
-    url='https://github.com/stroupbslayen/Pysonify',
+    py_modules=['jthon'],
+    url='https://github.com/stroupbslayen/Jthon',
     author='StroupBSlayen',
     author_email='',
     license='MIT',

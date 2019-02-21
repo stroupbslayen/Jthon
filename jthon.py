@@ -2,12 +2,12 @@ import os
 import json
 
 
-class Pysonify:
+class Jthon:
     '''Allows for easier manipulation of json files.
 
     It will check if a json file already exists with the given file name and open that, otherwise it will create a new one.
 
-    Default datatype is a DICT, but you can pass what you want to it. EX: example=Pyson(file_name,[]) would pass a list to the json.
+    Default datatype is a DICT, but you can pass what you want to it. EX: example=Jthon(file_name,[]) would pass a list to the json.
 
     To update the data, modify the json using the "data" attribute. EX: example.data.append('test') would add 'test' to the list declared above.
 
