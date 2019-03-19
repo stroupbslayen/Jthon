@@ -2,22 +2,37 @@
 
 This is a utility to make working with JSON files easier.
 
-## Installation
-```py
+## Installation 
+
 pip install jthon
+
+
+### Usage
+```
+import jthon
+file = jthon.load('test_file')
+urls = file.find('url', limit=2)
+print(f"Number of results limited to [{len(urls)}]: {', '.join(str(url) for url in urls)}")
+title = file.get('data').get('children')[1].get('data').get('title')
+print(title)
+file['data']['dist'] = 25
+file.save(sort_keys=None)
+```
+More examples can be found in the examples folder
+### Requirements
+
+```
+python3 >
 ```
 
-## Example
 
-```py
-from jthon import Jthon
 
-'''Creates or reads a json file if it already exists and Passes a list as the datatype. The default datatype is a dict'''
+## Authors
+* **StroupBSlayen** - [GitHub](https://github.com/stroupbslayen)
+* **ProbsJustin** - [GitHub](https://github.com/SobieskiCodes)
 
-file = Jthon('json_file') # Enter the name of the JSON file. If the file exists then the data attribute will be the contents of the file.
+## License
 
-file.data['key'] = 'value' # Add a key and value to the data attribute
+This project is licensed under MIT - see the [LICENSE.md](LICENSE) file for details
 
-file.save() # The current state of the data attribute will be saved to JSON file
 
-```
