@@ -1,4 +1,4 @@
 include *.txt
-recursive-include Examples *.json
+include Examples *.json
 recursive-include Examples *.py
 recursive-include jthon *.py

@@ -7,7 +7,7 @@ setup(
     name='jthon',
     version='1.0.0',
     description='A JSON helper for Python',
-    py_modules=['jthon'],
+    packages=['jthon'],
     url='https://github.com/stroupbslayen/Jthon',
     author='StroupBSlayen',
     author_email='',
