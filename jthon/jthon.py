@@ -141,7 +141,7 @@ class Jthon:
                     lst += Jthon(data=v).find(key, value=value, limit=limit, exact=exact)
                 elif isinstance(v, (list, tuple)):
                     lst += Jthon(data=v).find(key, value=value, limit=limit, exact=exact)
-                if k == key:
+                if k == key or filter(key, k, exact):
                     if value != default_arg or filter(value, v, exact):
                         if v == value:
                             lst.append(Found(k, v, self.data))

@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
     name='jthon',
-    version='1.0.1',
+    version='1.0.0a',
     description='A JSON helper for Python',
     packages=['jthon'],
     url='https://github.com/stroupbslayen/Jthon',
