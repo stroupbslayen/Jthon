@@ -33,6 +33,6 @@ python3 >
 
 ## License
 
-This project is licensed under MIT - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under MIT - see the [LICENSE](LICENSE.txt) file for details
 
 
