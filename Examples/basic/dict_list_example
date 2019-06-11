@@ -1,0 +1,30 @@
+#Allows us to use 'same key' values as a list in the dict.
+import jthon
+
+example = jthon.load('example', dict(stocks=[]))
+
+day_1 = {"25": {
+    "acronym": "X",
+    "current_price": "69.203",
+    "total_shares": 21977807542,
+    "available_shares": 304102870,
+    "timestamp": 1.56024883
+}
+}
+day_2 = {"25": {
+    "acronym": "X",
+    "current_price": "69.203",
+    "total_shares": 21977807542,
+    "available_shares": 304102870,
+    "timestamp": 1.5600677E9
+}
+}
+example['stocks'].append(day_1)
+example['stocks'].append(day_2)
+example.save()
+for x in example['stocks']:
+    print(type(x), x)
+
+f = example.get('stocks').find('25')
+for x in f:
+    print(type(x))
